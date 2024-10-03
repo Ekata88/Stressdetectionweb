@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress Prediction Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>Smartwatch Dashboard</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-title">
+          <h1>Stress Prediction Dashboard</h1>
+        </div>
+        <div class="user-profile">
+          <img src="assets/profile.jpg" alt="User Profile">
+        </div>
+      </header>
+
+      <!-- Dashboard Grid -->
+      <section class="dashboard-grid">
+        <!-- Each metric as a card -->
+        <div class="card" id="snoring-rate">
+          <h3>Snoring Rate</h3>
+          <p>0 dB</p>
+        </div>
+        <div class="card" id="respiration-rate">
+          <h3>Respiration Rate</h3>
+          <p>0 BPM</p>
+        </div>
+        <div class="card" id="body-temp">
+          <h3>Body Temperature</h3>
+          <p>0°C</p>
+        </div>
+        <div class="card" id="limb-movement">
+          <h3>Limb Movement</h3>
+          <p>0 movements/min</p>
+        </div>
+        <div class="card" id="body-oxygen">
+          <h3>Body Oxygen</h3>
+          <p>0%</p>
+        </div>
+        <div class="card" id="sleeping-hrs">
+          <h3>Sleeping Hours</h3>
+          <p>0 hrs</p>
+        </div>
+        <div class="card" id="heart-rate">
+          <h3>Heart Rate</h3>
+          <p>0 BPM</p>
+        </div>
+        <div class="card" id="steps-taken">
+          <h3>Steps Taken</h3>
+          <p>0 steps</p>
+        </div>
+        <div class="card" id="stress-level">
+          <h3>Stress Level</h3>
+          <p>0%</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
