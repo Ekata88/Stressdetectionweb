@@ -13,7 +13,17 @@ app.post('/predict-stress', (req, res) => {
     const inputData = req.body;
 
     // Validate incoming data
-    if (!inputData || !inputData['snoring range'] || !inputData['hours of sleep']) {
+    if (
+        !inputData ||
+        typeof inputData['snoring range'] === 'undefined' ||
+        typeof inputData['respiration rate'] === 'undefined' ||
+        typeof inputData['body temperature'] === 'undefined' ||
+        typeof inputData['limb movement'] === 'undefined' ||
+        typeof inputData['blood oxygen'] === 'undefined' ||
+        typeof inputData['eye movement'] === 'undefined' ||
+        typeof inputData['hours of sleep'] === 'undefined' ||
+        typeof inputData['heart rate'] === 'undefined'
+    ) {
         return res.status(400).json({ error: 'Invalid input data.' });
     }
 

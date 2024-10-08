@@ -124,4 +124,14 @@ plt.xlabel('Permutation Importance')
 plt.show()
 
 # Save the best model to a file
+import os
+
+# Save the best model to a file
 joblib.dump(best_model, 'best_stress_model.pkl')
+
+# Check if the file has been created
+if os.path.exists('best_stress_model.pkl'):
+    print("Model file 'best_stress_model.pkl' created successfully.")
+else:
+    print("Model file 'best_stress_model.pkl' was not created.")
+
