@@ -9,19 +9,17 @@
 
 <body>
   <div class="container">
-    <!-- Sidebar -->
     <nav class="sidebar">
       <h2>Smartwatch Dashboard</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Main Content -->
     <div class="main-content">
-      <!-- Header -->
       <header class="header">
         <div class="header-title">
           <h1>Stress Prediction Dashboard</h1>
@@ -31,13 +29,11 @@
         </div>
       </header>
 
-      <!-- Button to open the modal -->
       <button id="open-form-btn">Enter Data</button>
 
-      <!-- The Modal -->
       <div id="inputModal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <span class="close">×</span>
           <form id="user-input-form">
             <label for="snoring-rate-input">Snoring Rate (dB):</label>
             <input type="number" id="snoring-rate-input" name="snoring-rate"><br>
@@ -45,7 +41,7 @@
             <label for="respiration-rate-input">Respiration Rate (BPM):</label>
             <input type="number" id="respiration-rate-input" name="respiration-rate"><br>
 
-            <label for="body-temp-input">Body Temperature (°C):</label>
+            <label for="body-temp-input">Body Temperature (°F):</label>
             <input type="number" id="body-temp-input" name="body-temp"><br>
 
             <label for="limb-movement-input">Limb Movement (movements/min):</label>
@@ -65,7 +61,6 @@
         </div>
       </div>
 
-      <!-- Dashboard Grid -->
       <section class="dashboard-grid">
         <div class="card" id="snoring-rate">
           <h3>Snoring Rate</h3>
@@ -79,7 +74,7 @@
 
         <div class="card" id="body-temp">
           <h3>Body Temperature</h3>
-          <p>0°C</p>
+          <p>0°F</p>
         </div>
 
         <div class="card" id="limb-movement">
@@ -109,7 +104,7 @@
 
         <div class="card" id="stress-level">
           <h3>Stress Level</h3>
-          <p id="stress-level-value">1</p>
+          <p id="stress-level-value">0</p>
           <a href="stress-management.html" id="get-management-tips">Get Stress Management Tips</a>
         </div>
       </section>
