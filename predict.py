@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('best_stress_model.pkl')
+model = joblib.load('test.pkl')
 
 # Get input data from command line arguments
 input_data = json.loads(sys.argv[1])
