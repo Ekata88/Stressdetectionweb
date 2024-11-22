@@ -1,0 +1,90 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    background-color: #2c3e50;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    color: white;
+  }
+  
+  .sidebar h2 {
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #3498db;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-title h1 {
+    font-size: 32px;
+    color: #2c3e50;
+  }
+  
+  .user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Tips Section */
+  .tips-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tips-section h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  #stress-tips {
+    font-size: 18px;
+    color: #34495e;
+  }
+  

@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0072ff;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    overflow-y: scroll;
+    
+  }
+
+  .about-header {
+    background-color: #0072ff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .about-card p {
+    color: #57606f;
+  }
+
+  .developers-section {
+    margin-top: 60px;
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+
+  .developer-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
